@@ -1,0 +1,144 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+
+    
+    
+    <title>Medonor</title>
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img id="heart" src="https://cdn-icons-gif.flaticon.com/6449/6449707.gif" alt="" srcset="" height="100px" width="100px" class="icon" >
+        <ul class="navlist">
+          <li><a href="/home" class="activeLink"> Home </a></li>
+          <li>
+            <a href="/about"> About </a>
+          </li>
+          <li>
+            <li>
+              <a href="/feedback"> FAQ's </a>
+            </li>
+          <li>
+            <a href="/contact"> Contact </a>
+          </li>
+          <li>
+            <a href="/donate">Donate</a>
+            
+          </li>
+          <li>
+            <a href="https://chatformeds.netlify.app" target="_blank">ChatForMeds</a>
+            
+          </li>
+          <li>
+            <form method="post" action="/logout">
+
+              <button class="logoutBtn" type="submit">Logout</button>
+            </form>
+            
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="container">
+    <main class="imageSlider">
+      <h1 id="welcomeHome">WELCOME TO MEDONOR</h1>
+      <div id="typedText"></div>
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="/images/bp.jpg" alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="/images/cane.jpg"  alt="" srcset=""></div>
+          <div class="swiper-slide"><img src="/images/walker.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="/images/wheelchair.jpg"  alt=""></div>
+                  <!-- If we need pagination -->
+       
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+        
+      
+        
+        
+     
+       
+   
+    </main>
+    
+    
+    
+    
+    
+    
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay:{
+          delay:2000,
+          disableOnInteraction:false
+        },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable:true,
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      
+      // And if we need scrollbar
+      
+    });  
+    </script>
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js">
+ 
+</script>
+<script>
+   var app = document.getElementById('typedText');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(0)
+  .typeString('Giving <strong style="font-size:2.2rem;color:yellow;background-color:black;font-weight:bold ">hope</strong>, one <strong style="font-size:2.2rem;color:green;background-color:white;font-weight:bold">equipment</strong> at a time!')
+  .pauseFor(500)
+  .deleteAll(37)
+  .typeString('Donate <strong style="font-weight:bold;color:red;font-size:2.2rem background-color:white ">TODAY</strong>, heal a <strong style="font-size:2.2rem;color:green;" >L</strong><strong style="font-size:2.2rem;color:blueviolet" >I</strong><strong style="font-size:2.2rem;color:yellow">F</strong><strong style="font-size:2.2rem;color:red">E</strong> tomorrow.')
+  .pauseFor(500)
+  .deleteAll(28)
+  
+  .start();
+
+
+
+</script>
+
+
+  </body>
+    </html>
